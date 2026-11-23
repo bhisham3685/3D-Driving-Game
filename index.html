@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>3D Driving Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="hud">
+        <div class="pill">SPEED <b id="speed">0</b> km/h</div>
+        <div class="pill">DISTANCE <b id="distance">0</b> m</div>
+        <div class="pill">SCORE <b id="score">0</b></div>
+    </div>
+    <div id="overlay">
+        <div class="panel">
+            <h1>DRIVE 3D</h1>
+            <p>Drive, dodge traffic and go as far as you can!</p><button id="start">START DRIVE</button><small>PC: WASD
+                / Arrow keys · Mobile: touch controls</small>
+        </div>
+    </div>
+    <div id="gameover" class="hidden">
+        <div class="panel">
+            <h1>CRASH!</h1>
+            <p>Distance: <b id="finaldistance">0</b> m · Score: <b id="finalscore">0</b></p><button id="restart">DRIVE
+                AGAIN</button>
+        </div>
+    </div>
+    <div id="controls"><button data-key="left" class="control">◀</button><button data-key="right"
+            class="control">▶</button>
+        <div class="pedals"><button data-key="brake" class="control">BRAKE</button><button data-key="accelerate"
+                class="control">GO ▲</button></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
